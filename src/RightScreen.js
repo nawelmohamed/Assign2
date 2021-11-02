@@ -1,13 +1,16 @@
 import React from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-const RightScreen = ()=> {
+
+const RightScreen = ({direction})=> {
+    
+
       return <View>
           <View style={Styles.row}>
-          <Text>Direction:   'Right'</Text>
+          <Text>Direction: {direction}</Text>
           </View>
           <View style={Styles.row}>
-          <Text>Color:   'Blue'</Text>
+          <Text>Color:'blue'</Text>
           </View>
       </View>
 };

@@ -1,14 +1,15 @@
 import React from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-const LeftScreen = ()=> {
+
+const LeftScreen = ({direction, navigation})=> {
       return <View>
           <View style={Styles.row}>
-          <Text>Direction:   'left'</Text>
+          <Text>Direction:{direction}</Text>
           </View>
           <View style={Styles.row}>
 
-          <Text>Color:   'Red'</Text>
+          <Text>Color:'red'</Text>
           </View>
       </View>
 };
@@ -18,7 +19,7 @@ const Styles= StyleSheet.create({
         justifyContent: "center",
         padding: 30,
     
-        border: 1,
+        border: 3,
         borderColor: "gray"
     }
 });
