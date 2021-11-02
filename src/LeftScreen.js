@@ -2,7 +2,7 @@ import React from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 
-const LeftScreen = ({direction, navigation})=> {
+const LeftScreen = ({direction})=> {
       return <View>
           <View style={Styles.row}>
           <Text>Direction:{direction}</Text>

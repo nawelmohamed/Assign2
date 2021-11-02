@@ -11,15 +11,20 @@ const HomeScreen = ({navigation}) => {
            style={styles.input} 
            value={direction} 
            onChangeText={text=> setDirection(text)}
+           
         />
-             
+
             <Button 
             title={direction}
-            onPress={(direction, color)=>{
-              if (direction==='Right') {
+            onPress={()=>{              
+
+              if (direction === 'right') {
               (navigation.navigate('Right',{direction}))
+              console.log('hi there')
             }else {
               (navigation.navigate('Left',{direction}))
+              console.log('hi')
+
               }
             }}/>
                
