@@ -22,7 +22,8 @@ const HomeScreen = ({navigation}) => {
               (navigation.navigate('Right',{direction}))
               console.log('hi there')
             }else {
-              (navigation.navigate('Left',{direction}))
+              
+              (navigation.navigate('Left',{direction, color}))
               console.log('hi')
 
               }

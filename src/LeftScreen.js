@@ -2,14 +2,14 @@ import React from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 
-const LeftScreen = ({direction})=> {
+const LeftScreen = ({direction, color})=> {
       return <View>
           <View style={Styles.row}>
           <Text>Direction:{direction}</Text>
           </View>
           <View style={Styles.row}>
 
-          <Text>Color:'red'</Text>
+          <Text>Color:{color}</Text>
           </View>
       </View>
 };

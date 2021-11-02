@@ -2,7 +2,7 @@ import React from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 
-const RightScreen = ({direction})=> {
+const RightScreen = ({direction, color})=> {
     
 
       return <View>
@@ -10,7 +10,7 @@ const RightScreen = ({direction})=> {
           <Text>Direction: {direction}</Text>
           </View>
           <View style={Styles.row}>
-          <Text>Color:'blue'</Text>
+          <Text>Color: {color}</Text>
           </View>
       </View>
 };
