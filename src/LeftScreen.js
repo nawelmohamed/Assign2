@@ -12,7 +12,7 @@ const LeftScreen = ({navigation})=> {
 
           <View style={Styles.row}>
 
-          <Text>Color:       {navigation.getParam('color')}</Text>
+          <Text>Color:      {navigation.getParam('color')}</Text>
 
 
           </View>
