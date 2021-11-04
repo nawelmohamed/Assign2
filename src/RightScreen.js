@@ -2,15 +2,15 @@ import React from "react";
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 
-const RightScreen = ({direction, color})=> {
+const RightScreen = ({navigation})=> {
     
 
       return <View>
           <View style={Styles.row}>
-          <Text>Direction: {direction}</Text>
+          <Text>Direction:  {navigation.getParam('direction')}</Text>
           </View>
           <View style={Styles.row}>
-          <Text>Color: {color}</Text>
+          <Text>Color:    {navigation.getParam('color')}</Text>
           </View>
       </View>
 };

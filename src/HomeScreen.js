@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import {View, Text, StyleSheet, TextInput, Button} from 'react-native';
+import { withNavigation } from "react-navigation";
+
 
 const HomeScreen = ({navigation}) => {
     const [direction, setDirection]= useState('');
-    const [color,setColor]=useState('');
+    
     return (
     <View>
         <Text style={styles.label}>Enter Text</Text>
@@ -19,12 +21,16 @@ const HomeScreen = ({navigation}) => {
             onPress={()=>{              
 
               if (direction === 'right') {
-              (navigation.navigate('Right',{direction}))
-              console.log('hi there')
+                const color=('blue');
+                console.log({color});
+              (navigation.navigate('Right',{direction, color}));
+              console.log({direction,color});
             }else {
-              
-              (navigation.navigate('Left',{direction, color}))
-              console.log('hi')
+              const color=('red');
+              console.log({color});
+
+              (navigation.navigate('Left',{ direction, color}));
+              console.log({direction,color});
 
               }
             }}/>
@@ -51,4 +57,4 @@ const styles= StyleSheet.create({
     }
 });
 
-export default HomeScreen;
+export default withNavigation (HomeScreen);
